@@ -54,6 +54,17 @@ export default function TodoList() {
     setTodos(todos.filter((todo) => todo.id !== id));
   };
 
+  // Edit a todo
+  const editTodo = (id, newText) => {
+    if (newText.trim()) {
+      setTodos(
+        todos.map((todo) =>
+          todo.id === id ? { ...todo, text: newText.trim() } : todo
+        )
+      );
+    }
+  };
+
   // Filter todos based on current filter
   const filteredTodos = todos.filter((todo) => {
     if (filter === "completed") return todo.completed;
@@ -73,6 +84,7 @@ export default function TodoList() {
               todo={todo}
               toggleTodo={toggleTodo}
               removeTodo={removeTodo}
+              editTodo={editTodo}
             />
           ))
         ) : (
