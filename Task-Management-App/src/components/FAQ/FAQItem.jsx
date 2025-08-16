@@ -1,4 +1,3 @@
-import React, { useState } from "react";
 import "./FAQ.css";
 
 export default function FAQItem({ question, answer, isOpen, onToggle }) {
