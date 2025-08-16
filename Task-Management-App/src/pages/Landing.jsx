@@ -1,4 +1,3 @@
-import React from "react";
 import Hero from "../components/Landing/Hero";
 import Features from "../components/Landing/Features";
 import CallToAction from "../components/Landing/CallToAction";
