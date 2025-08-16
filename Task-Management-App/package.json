@@ -1,9 +1,9 @@
 {
+  "homepage": "https://back-to-front.github.io/Task-Management-App/",
   "name": "task-management-app",
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://back-to-front.github.io/Task-Management-App/",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
