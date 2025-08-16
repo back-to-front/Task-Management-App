@@ -21,10 +21,10 @@ export default function TodoItem({ todo, toggleTodo, removeTodo, editTodo }) {
   };
 
   const handleKeyPress = (e) => {
-    if (e.key === 'Enter') {
+    if (e.key === "Enter") {
       editTodo(todo.id, editText);
       setIsEditing(false);
-    } else if (e.key === 'Escape') {
+    } else if (e.key === "Escape") {
       handleCancel();
     }
   };
