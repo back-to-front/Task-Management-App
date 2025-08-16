@@ -1,10 +1,6 @@
 import { useEffect } from "react";
 import { useLocation } from "react-router";
 
-/**
- * ScrollToTop component that scrolls the window to the top
- * when navigating to a new page
- */
 function ScrollToTop() {
   const { pathname } = useLocation();
 

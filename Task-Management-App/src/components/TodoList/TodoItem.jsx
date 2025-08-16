@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import "./TodoList.css";
 
 export default function TodoItem({ todo, toggleTodo, removeTodo, editTodo }) {

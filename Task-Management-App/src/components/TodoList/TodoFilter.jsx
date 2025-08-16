@@ -1,4 +1,3 @@
-import React from "react";
 import "./TodoList.css";
 
 export default function TodoFilter({ filter, setFilter }) {

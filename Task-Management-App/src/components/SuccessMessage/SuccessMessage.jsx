@@ -1,4 +1,3 @@
-import React from "react";
 import "./SuccessMessage.css";
 
 const SuccessMessage = ({
