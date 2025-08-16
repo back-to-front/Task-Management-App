@@ -34,7 +34,6 @@ export default function TodoList() {
         id: Date.now(),
         text,
         completed: false,
-        // createdAt: new Date(),
       };
       setTodos([...todos, newTodo]);
     }
