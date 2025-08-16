@@ -1,7 +1,6 @@
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
-import NavDropdown from "react-bootstrap/NavDropdown";
 import Offcanvas from "react-bootstrap/Offcanvas";
 import { NavLink } from "react-router";
 import "./Navbar.css";
@@ -10,7 +9,12 @@ function OffcanvasExample() {
   return (
     <>
       {["sm"].map((expand) => (
-        <Navbar key={expand} expand={expand} className='bg-body-tertiary'>
+        <Navbar
+          sticky='top'
+          key={expand}
+          expand={expand}
+          className='bg-body-tertiary'
+        >
           <Container fluid>
             <NavLink to='/' className='navLink navTitle'>
               Task Management

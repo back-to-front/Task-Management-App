@@ -2,6 +2,7 @@ import React from "react";
 import { useForm } from "@formspree/react";
 import "./Contact.css";
 import SuccessMessage from "../../components/SuccessMessage/SuccessMessage";
+import FAQSection from "../../components/FAQ/FAQSection";
 
 export default function Contact() {
   const [state, handleSubmitFormspree] = useForm("mwpqzjdl");
@@ -141,6 +142,7 @@ export default function Contact() {
           </form>
         )}
       </div>
+      <FAQSection />
     </div>
   );
 }
