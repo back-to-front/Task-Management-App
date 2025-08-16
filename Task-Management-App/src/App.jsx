@@ -4,11 +4,13 @@ import { Route, Routes } from "react-router";
 import Landing from "./pages/Landing";
 import Home from "./pages/Home/Home";
 import Contact from "./pages/Contact/Contact";
+import ScrollToAnchor from "./components/ScrollToAnchor";
 
 export default function App() {
   return (
     <>
       <Navbar />
+      <ScrollToAnchor />
       <Routes>
         <Route path='/' element={<Landing />} />
         <Route path='/todo' element={<Home />} />
