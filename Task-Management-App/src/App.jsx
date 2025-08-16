@@ -3,7 +3,7 @@ import Navbar from "./components/Navbar/Navbar";
 import { Route, Routes } from "react-router";
 import Landing from "./pages/Landing";
 import Home from "./pages/Home";
-import Contact from "./pages/Contact";
+import Contact from "./pages/Contact/Contact";
 
 export default function App() {
   return (
