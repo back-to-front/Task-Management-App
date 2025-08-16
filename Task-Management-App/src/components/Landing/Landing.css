@@ -2,7 +2,11 @@
 
 /* Hero Section */
 .hero-section {
-  background-color: #f8fafc;
+  background-image: url("../../../public/background2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
   padding: 60px 0 80px;
   min-height: 80vh;
   display: flex;
@@ -12,11 +16,13 @@
 .hero-container {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0 20px;
+  padding: 10px 20px;
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 60px;
   align-items: center;
+  background-color: rgba(255, 255, 255, 0.75);
+  border-radius: 20px;
 }
 
 .hero-content {
@@ -267,7 +273,8 @@
 }
 
 .cta-btn.primary:hover {
-  background-color: #f8fafc;
+  background-color: #d8d8d8;
+  border: 2px solid #d8d8d8;
 }
 
 .cta-btn.secondary {
@@ -339,7 +346,10 @@
     padding: 60px 0;
   }
 
-  .hero-container,
+  .hero-container {
+    padding: 20px 15px;
+  }
+
   .features-container,
   .cta-container {
     padding: 0 15px;
