@@ -14,7 +14,7 @@ export default function CallToAction() {
             free!
           </p>
           <div className='cta-buttons'>
-            <Link to='/home' className='cta-btn primary'>
+            <Link to='/todo' className='cta-btn primary'>
               Start Managing Tasks
             </Link>
             <Link to='/contact' className='cta-btn secondary'>

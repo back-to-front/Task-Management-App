@@ -16,7 +16,7 @@ export default function Hero() {
             management app. Create, track, and complete your todos with ease.
           </p>
           <div className='hero-buttons'>
-            <Link to='/home' className='hero-btn primary'>
+            <Link to='/todo' className='hero-btn primary'>
               Get Started
             </Link>
             <Link to='/contact' className='hero-btn secondary'>
