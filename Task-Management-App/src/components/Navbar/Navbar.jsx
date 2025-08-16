@@ -35,8 +35,11 @@ function OffcanvasExample() {
                   <NavLink to='/todo' className='navLink home'>
                     Todos
                   </NavLink>
-                  <NavLink to='/contact' className='navLink'>
+                  <NavLink to='/contact' className='navLink contact'>
                     Contact
+                  </NavLink>
+                  <NavLink to='/contact#faq' className='navLink'>
+                    FAQ
                   </NavLink>
                 </Nav>
               </Offcanvas.Body>
