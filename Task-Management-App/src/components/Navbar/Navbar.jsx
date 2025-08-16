@@ -1,3 +1,4 @@
+import { useState } from "react";
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
@@ -6,6 +7,10 @@ import { NavLink } from "react-router";
 import "./Navbar.css";
 
 function OffcanvasExample() {
+  const [expanded, setExpanded] = useState(false);
+
+  const handleNavClose = () => setExpanded(false);
+
   return (
     <>
       {["sm"].map((expand) => (
@@ -13,10 +18,16 @@ function OffcanvasExample() {
           sticky='top'
           key={expand}
           expand={expand}
+          expanded={expanded}
+          onToggle={setExpanded}
           className='bg-body-tertiary'
         >
           <Container fluid>
-            <NavLink to='/' className='navLink navTitle'>
+            <NavLink
+              to='/'
+              className='navLink navTitle'
+              onClick={handleNavClose}
+            >
               Task Management
             </NavLink>
             <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-${expand}`} />
@@ -24,21 +35,35 @@ function OffcanvasExample() {
               id={`offcanvasNavbar-expand-${expand}`}
               aria-labelledby={`offcanvasNavbarLabel-expand-${expand}`}
               placement='end'
+              show={expanded}
+              onHide={handleNavClose}
             >
               <Offcanvas.Header closeButton>
                 <Offcanvas.Title id={`offcanvasNavbarLabel-expand-${expand}`}>
-                  Offcanvas
+                  Menu
                 </Offcanvas.Title>
               </Offcanvas.Header>
               <Offcanvas.Body>
                 <Nav className='justify-content-end flex-grow-1 pe-3'>
-                  <NavLink to='/todo' className='navLink home'>
+                  <NavLink
+                    to='/todo'
+                    className='navLink home'
+                    onClick={handleNavClose}
+                  >
                     Todos
                   </NavLink>
-                  <NavLink to='/contact' className='navLink contact'>
+                  <NavLink
+                    to='/contact'
+                    className='navLink contact'
+                    onClick={handleNavClose}
+                  >
                     Contact
                   </NavLink>
-                  <NavLink to='/contact#faq' className='navLink'>
+                  <NavLink
+                    to='/contact#faq'
+                    className='navLink'
+                    onClick={handleNavClose}
+                  >
                     FAQ
                   </NavLink>
                 </Nav>
