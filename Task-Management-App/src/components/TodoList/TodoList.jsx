@@ -5,21 +5,26 @@ import TodoFilter from "./TodoFilter";
 import "./TodoList.css";
 
 export default function TodoList() {
-  // State for todos and filter
-  const [todos, setTodos] = useState([]);
+  // Load initial todos from localStorage or use empty array
+  const [todos, setTodos] = useState(() => {
+    try {
+      const storedTodos = localStorage.getItem("todos");
+      return storedTodos ? JSON.parse(storedTodos) : [];
+    } catch (error) {
+      console.error("Error loading todos from localStorage:", error);
+      return [];
+    }
+  });
+
   const [filter, setFilter] = useState("all");
 
-  // Load todos from localStorage on initial render
+  // Save todos to localStorage whenever they change (but not on initial render)
   useEffect(() => {
-    const storedTodos = localStorage.getItem("todos");
-    if (storedTodos) {
-      setTodos(JSON.parse(storedTodos));
+    try {
+      localStorage.setItem("todos", JSON.stringify(todos));
+    } catch (error) {
+      console.error("Error saving todos to localStorage:", error);
     }
-  }, []);
-
-  // Save todos to localStorage whenever they change
-  useEffect(() => {
-    localStorage.setItem("todos", JSON.stringify(todos));
   }, [todos]);
 
   // Add a new todo
@@ -29,7 +34,7 @@ export default function TodoList() {
         id: Date.now(),
         text,
         completed: false,
-        createdAt: new Date(),
+        // createdAt: new Date(),
       };
       setTodos([...todos, newTodo]);
     }
