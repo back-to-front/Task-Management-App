@@ -1,0 +1,126 @@
+/* Success Message Component */
+.success-message {
+  background-color: white;
+  border-radius: 12px;
+  border: 1px solid #e2e8f0;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  text-align: center;
+  animation: fadeIn 0.5s ease;
+  margin-bottom: 20px;
+}
+
+.success-icon {
+  width: 70px;
+  height: 70px;
+  background-color: #10b981; /* Success green color */
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 20px;
+}
+
+.success-icon svg {
+  width: 40px;
+  height: 40px;
+  color: white;
+}
+
+.success-title {
+  font-size: 1.75rem;
+  color: #333;
+  margin: 0 0 10px 0;
+  font-weight: 500;
+}
+
+.success-message p {
+  color: #666;
+  margin: 0 0 20px 0;
+  font-size: 1.1rem;
+}
+
+.return-btn {
+  padding: 12px 24px;
+  background-color: #4f46e5;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  display: inline-block;
+  text-decoration: none;
+}
+
+.return-btn:hover {
+  background-color: #4338ca;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive styles */
+@media (min-width: 768px) {
+  .success-message {
+    padding: 40px;
+    max-width: 800px;
+    margin: 0 auto 20px;
+  }
+
+  .success-icon {
+    width: 90px;
+    height: 90px;
+  }
+
+  .success-icon svg {
+    width: 50px;
+    height: 50px;
+  }
+
+  .success-title {
+    font-size: 2rem;
+  }
+
+  .success-message p {
+    font-size: 1.2rem;
+  }
+
+  .return-btn {
+    padding: 16px 28px;
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 640px) {
+  .success-message {
+    padding: 20px;
+  }
+
+  .success-icon {
+    width: 60px;
+    height: 60px;
+  }
+
+  .success-icon svg {
+    width: 35px;
+    height: 35px;
+  }
+
+  .success-title {
+    font-size: 1.5rem;
+  }
+
+  .success-message p {
+    font-size: 1rem;
+  }
+}
