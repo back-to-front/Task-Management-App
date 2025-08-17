@@ -8,7 +8,11 @@ https://back-to-front.github.io/Task-Management-App
 
 ## State Tree
 
-[State Tree](state-tree.js)
+[State Tree](/WireFrame/state-tree.js)
+
+## Container & Presentational Components
+
+[Components](/WireFrame/component-architecture.js)
 
 ## Overview
 
