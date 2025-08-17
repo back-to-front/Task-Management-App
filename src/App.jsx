@@ -11,9 +11,9 @@ export default function App() {
       <Navbar />
       <ScrollToAnchor />
       <Routes>
-        <Route path='/' element={<Landing />} />
-        <Route path='/todo' element={<Home />} />
-        <Route path='/contact' element={<Contact />} />
+        <Route path='/Task-Management-App' element={<Landing />} />
+        <Route path='/Task-Management-App/todo' element={<Home />} />
+        <Route path='/Task-Management-App/contact' element={<Contact />} />
       </Routes>
     </>
   );
