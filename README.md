@@ -2,6 +2,10 @@
 
 Austen Cole
 
+## Hosting Link
+
+https://back-to-front.github.io/Task-Management-App
+
 ## Overview
 
 Task Management App is a modern, responsive web application designed to help users organize and keep track of their daily tasks. Built with React and using modern web technologies, this application provides a clean and intuitive interface for managing to-do lists with ease.
