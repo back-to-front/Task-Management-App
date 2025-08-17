@@ -20,7 +20,11 @@ function NavbarComponent() {
       className='bg-body-tertiary'
     >
       <Container fluid>
-        <NavLink to='/' className='navLink navTitle' onClick={handleNavClose}>
+        <NavLink
+          to='/Task-Management-App'
+          className='navLink navTitle'
+          onClick={handleNavClose}
+        >
           Task Management
         </NavLink>
         <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-${expand}`} />
@@ -39,21 +43,21 @@ function NavbarComponent() {
           <Offcanvas.Body>
             <Nav className='justify-content-end flex-grow-1 pe-3'>
               <NavLink
-                to='/todo'
+                to='/Task-Management-App/todo'
                 className='navLink home'
                 onClick={handleNavClose}
               >
                 Todos
               </NavLink>
               <NavLink
-                to='/contact'
+                to='/Task-Management-App/contact'
                 className='navLink contact'
                 onClick={handleNavClose}
               >
                 Contact
               </NavLink>
               <NavLink
-                to='/contact#faq'
+                to='/Task-Management-App/contact#faq'
                 className='navLink'
                 onClick={handleNavClose}
               >

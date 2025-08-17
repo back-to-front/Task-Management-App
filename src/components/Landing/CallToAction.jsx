@@ -13,10 +13,13 @@ export default function CallToAction() {
             free!
           </p>
           <div className='cta-buttons'>
-            <Link to='/todo' className='cta-btn primary'>
+            <Link to='/Task-Management-App/todo' className='cta-btn primary'>
               Start Managing Tasks
             </Link>
-            <Link to='/contact' className='cta-btn secondary'>
+            <Link
+              to='/Task-Management-App/contact'
+              className='cta-btn secondary'
+            >
               Get in Touch
             </Link>
           </div>
